@@ -13,14 +13,14 @@ body {
 
 .container {
     display: flex;
-    height: 90vw;
+    width: 90vw;
 }
 
 .container .panel:nth-child(1) {
     background-image: url('../images/pexels-eugenia-remark-5767088-30056440.jpg');
 }
 .container .panel:nth-child(2) {
-    background-image: url('../images/pexels-frank-castaneda-pena-1139601589-20891103.jpg');
+    background-image: url('../images/gettyimages-1947257376-170667a.jpg');
 }
 .container .panel:nth-child(3) {
     background-image: url('../images/pexels-hoang-b-u-2062876836-30063887.jpg');
@@ -28,11 +28,40 @@ body {
 .container .panel:nth-child(4) {
     background-image: url('../images/pexels-janis-dzenis-2148060180-30089615.jpg');
 }
-.container .panel:nth-child(5) {
-    background-image: url('../images/pexels-marina-zvada-844583049-29622155.jpg');
-}
+
 .container .panel:nth-child(5) {
     background-image: url('../images/pexels-raymond-petrik-1448389535-30232145.jpg');
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 85vh;
+    border-radius: 5px;
+    color: #fff;
+    flex: 0.5;
+    margin: 10px;
+    transition: all 700ms ease-in;
+    position: relative;
+
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    padding-top: 580px;
+    left: 0;
+    bottom: 0;
+    opacity: 0;  
+}
+
+.panel.active {
+    flex: 5;
+}
+.panel.panel h3 {
+    opacity: 1;
+   transition: opacity 0.3s ease-in 0.4s;
 }
 
 
