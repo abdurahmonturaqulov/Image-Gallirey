@@ -12,6 +12,7 @@ body {
 }
 
 .container {
+  
   display: flex;
   width: 90vw;
 }
@@ -47,7 +48,7 @@ body {
   cursor: pointer;
   flex: 0.5;
   margin: 10px;
-  transition: all 0.7s ease-in;
+  transition: all 700ms ease-in;
   position: relative;
 }
 
@@ -55,8 +56,8 @@ body {
   font-size: 24px;
   position: absolute;
   padding-top: 580px;
-  left: 0;
-  bottom:  0;
+  left: 5px;
+  
   opacity: 0;
 }
 
